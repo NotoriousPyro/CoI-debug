@@ -6,18 +6,18 @@
     "configurations": [
         {
             "name": ".NET Core Launch (console)",
-            "type": "coreclr",
+            "type": "clr",
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${env:COI_ROOT}/Captain of Industry.exe",
             "args": ["--skip-assets-preload"],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${env:COI_ROOT}",
             "console": "internalConsole",
             "stopAtEntry": false
         },
         {
             "name": ".NET Core Attach",
-            "type": "coreclr",
+            "type": "clr",
             "request": "attach"
         }
     ]
